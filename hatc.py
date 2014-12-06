@@ -17,13 +17,13 @@ algorithm = 'MD5'
 signature_encoding = 'BASE_64'
 signature_length = 8
 delimiters = '.'
-pre_regex = '[ \t\r\n]'
+pre_regex = '[\s]'
 chars_signed = -1
 signatures = []
 text_encoding = 'UTF8'
 
 m = md5.new()
-pre_reg = re.compile('\s')
+pre_reg = re.compile(pre_regex)
  
  
 def encode_section(section, max_length):

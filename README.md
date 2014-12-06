@@ -28,9 +28,9 @@ JSON Document with the following key values
 | signature_length     | For each section signature, how many characters are used. For example MD5_128 is 32 long but we could choose to only use the first 8. |
 | text_encoding        | Text encoding (UTF8 please!)                                                                                   |
       
-## Example
+## Example 1
 
-The following text
+The following meat article
 
     Bacon ipsum dolor amet ham shank chuck ball tip. Jowl cow jerky porchetta corned beef, strip steak tenderloin shankle short loin fatback. Spare ribs ham pork belly bacon, t-bone drumstick pancetta kevin rump porchetta hamburger capicola tongue turducken. Bacon capicola sausage tri-tip doner, ground round jowl pork pancetta chicken sirloin shank short ribs. Ham jerky short ribs short loin prosciutto pork belly. Pork belly shoulder ham hock bresaola pork chop doner beef, pancetta filet mignon pork loin.
     
@@ -73,3 +73,58 @@ Could be encoded as
         ],
         "text_encoding": "UTF8"
     }
+    
+Suppose a cupcake article referenced a subsection of the meat article.
+
+        Carrot cake chocolate bar ice cream powder muffin apple pie pastry soufflé jelly-o. Sugar plum toffee brownie candy dragée donut fruitcake cookie lollipop. Liquorice sesame snaps icing jelly beans chocolate carrot cake. Halvah marshmallow lollipop applicake. Gummies chocolate bar marshmallow cake oat cake. Lemon drops croissant jujubes. Tart jelly beans danish applicake sweet roll liquorice. Unerdwear.com gummies marshmallow bonbon cookie bear claw brownie. Tiramisu cake lemon drops sweet. Macaroon muffin brownie gingerbread gingerbread wafer candy unerdwear.com marshmallow. Jujubes pastry icing bear claw applicake. Oat cake lemon drops lemon drops biscuit tootsie roll.
+        
+        Meatloaf sausage cupim alcatra landjaeger, tongue strip steak pastrami beef spare ribs. Meatloaf tail tenderloin pork loin. Tail shankle swine spare ribs picanha. Frankfurter shank flank venison, pork belly cow rump pastrami.
+        
+        Toffee fruitcake cookie muffin liquorice oat cake. Dessert lollipop halvah oat cake. Carrot cake gummi bears tart wafer oat cake bear claw jelly-o unerdwear.com liquorice. Applicake croissant lollipop. Bear claw soufflé macaroon. Danish tiramisu jelly liquorice danish. Sesame snaps sesame snaps marzipan tootsie roll halvah donut sesame snaps candy. Sweet roll fruitcake liquorice bear claw bonbon chocolate cheesecake chocolate bar applicake. Jelly beans chocolate cake macaroon donut. Tiramisu oat cake chocolate cake marzipan danish danish gummi bears bear claw. Soufflé muffin macaroon jelly beans. Candy canes carrot cake lollipop pastry macaroon pie fruitcake oat cake muffin.
+      
+would be encoded as
+  
+      
+      {
+          "algorithm": "MD5",
+          "chars_signed": -1,
+          "delimiters": ".",
+          "pre_regex": "[\\s]",
+          "signature_encoding": "BASE_64",
+          "signature_length": 8,
+          "signatures": [
+              "f79857a1",
+              "82f867e7",
+              "79d53163",
+              "e332ed2a",
+              "8ff34306",
+              "a6c1884e",
+              "7b5a94b9",
+              "23145dd5",
+              "f53bd129",
+              "c0043f88",
+              "11b37eab",
+              "f4c32e99",
+              "fd36d520",
+              "c826212b",
+              "94fe88d0",
+              "9a42af2c",
+              "6af3afc4",
+              "88b58a00",
+              "1ba18f42",
+              "6c0bf019",
+              "73a6670c",
+              "6adbac6c",
+              "26fb8feb",
+              "1d8f44bf",
+              "3c39f784",
+              "ce425fc7",
+              "a6f8fa5b",
+              "8842e658",
+              "4415b832",
+              "22971773",
+              "d84faf4c",
+              "d84faf4c"
+          ],
+          "text_encoding": "UTF8"
+      }      
