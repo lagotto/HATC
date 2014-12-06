@@ -28,4 +28,5 @@ JSON Document with the following key values
 | pre_regex            | Regex used to clean up text before creating signature. Remove spaces etc.                                            |
 | chars_signed         | Number of characters, pst pre_regex that are encoded. -1 is the complete document.                                   |
 | signatures           | Array of signatures of each subsection of a document                                                                 |
+| text encoding        | Text encoding (UTF8 please!)                                                                                   |
       
