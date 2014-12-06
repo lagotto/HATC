@@ -32,12 +32,27 @@ def encode_section(section, max_length):
 def pre_process(text, delimiter):
     global pre_regex
     return re.sub(pre_reg,'',text).split(delimiter)        
+
+print json.dumps(
+    {
+      'algorithm': algorithm,
+      'chars_signed': -1,
+      'signature_encoding': signature_encoding, 
+      'signatures': signatures,
+      'delimiters': delimiters,
+      'pre_regex': pre_regex,
+      'signature_length': signature_length,
+      'text_encoding': text_encoding
+    },
+    sort_keys=False, 
+    indent=4, 
+    separators=(',', ': '))
     
 for section in pre_process(text,'.'):
-    #print section
-    sig = encode_section(section,signature_length)
-    #print sig
-    signatures.append(sig)
+    if len(section) > 0:
+    	sig = encode_section(section,signature_length)
+    	print sig
+    	signatures.append(sig)
 
 print json.dumps(
     {

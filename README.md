@@ -30,7 +30,7 @@ JSON Document with the following key values
       
 ## Example 1
 
-The following meat article
+The following bacon article
 
     Bacon ipsum dolor amet ham shank chuck ball tip. Jowl cow jerky porchetta corned beef, strip steak tenderloin shankle short loin fatback. Spare ribs ham pork belly bacon, t-bone drumstick pancetta kevin rump porchetta hamburger capicola tongue turducken. Bacon capicola sausage tri-tip doner, ground round jowl pork pancetta chicken sirloin shank short ribs. Ham jerky short ribs short loin prosciutto pork belly. Pork belly shoulder ham hock bresaola pork chop doner beef, pancetta filet mignon pork loin.
     
@@ -64,8 +64,7 @@ Could be encoded as
               "8b0e62fc",
               "899f0b76",
               "008a4665",
-              "1ba6c8ed",
-              "d41d8cd9"
+              "1ba6c8ed"
           ],
           "pre_regex": "[\\s]",
           "algorithm": "MD5",
@@ -75,7 +74,7 @@ Could be encoded as
           "signature_length": 8
       }
           
-Suppose a cupcake article referenced a subsection of the meat article.
+Suppose a cupcake article might referenced a subsection of the bacon article.
 
         Carrot cake chocolate bar ice cream powder muffin apple pie pastry soufflé jelly-o. Sugar plum toffee brownie candy dragée donut fruitcake cookie lollipop. Liquorice sesame snaps icing jelly beans chocolate carrot cake. Halvah marshmallow lollipop applicake. Gummies chocolate bar marshmallow cake oat cake. Lemon drops croissant jujubes. Tart jelly beans danish applicake sweet roll liquorice. Unerdwear.com gummies marshmallow bonbon cookie bear claw brownie. Tiramisu cake lemon drops sweet. Macaroon muffin brownie gingerbread gingerbread wafer candy unerdwear.com marshmallow. Jujubes pastry icing bear claw applicake. Oat cake lemon drops lemon drops biscuit tootsie roll.
         
@@ -84,7 +83,6 @@ Suppose a cupcake article referenced a subsection of the meat article.
         Toffee fruitcake cookie muffin liquorice oat cake. Dessert lollipop halvah oat cake. Carrot cake gummi bears tart wafer oat cake bear claw jelly-o unerdwear.com liquorice. Applicake croissant lollipop. Bear claw soufflé macaroon. Danish tiramisu jelly liquorice danish. Sesame snaps sesame snaps marzipan tootsie roll halvah donut sesame snaps candy. Sweet roll fruitcake liquorice bear claw bonbon chocolate cheesecake chocolate bar applicake. Jelly beans chocolate cake macaroon donut. Tiramisu oat cake chocolate cake marzipan danish danish gummi bears bear claw. Soufflé muffin macaroon jelly beans. Candy canes carrot cake lollipop pastry macaroon pie fruitcake oat cake muffin.
       
 would be encoded as
-  
       
        {
            "delimiters": ".",
@@ -119,8 +117,7 @@ would be encoded as
                "47e6f04d",
                "d3e1d1e6",
                "29bf4360",
-               "17d449b5",
-               "d41d8cd9"
+               "17d449b5"
            ],
            "pre_regex": "[\\s]",
            "algorithm": "MD5",
@@ -129,5 +126,6 @@ would be encoded as
            "text_encoding": "UTF8",
            "signature_length": 8
        }
-             
-By looking at the hashes we see an overlap of: ** **      
+                    
+By looking at the hashes we see an overlap of: e81721c3, 443461bb, 9e8f7047 and 29b22339 
+and could surmise the cupcake article references the bacon article.   
