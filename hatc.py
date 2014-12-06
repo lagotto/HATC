@@ -1,6 +1,17 @@
 import md5
 import re
 import json
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-t', '--text', default='')
+parser.add_argument('-f', '--file', default=None)
+args = parser.parse_args()
+
+text = args.text
+
+if args.file is not None:
+    text = open(args.file, 'r').read()
 
 algorithm = 'MD5'
 signature_encoding = 'BASE_64'
@@ -22,16 +33,12 @@ def encode_section(section, max_length):
 
 def pre_process(text, delimiter):
     global pre_re
-    return re.sub(pre_reg,'',text).split(delimiter)
-        
+    return re.sub(pre_reg,'',text).split(delimiter)        
     
-bacon = open('bacon_ipsum.txt', 'r').read()
 
+print text
 
-
-print bacon
-
-for section in pre_process(bacon,'.'):
+for section in pre_process(text,'.'):
     signatures.append(encode_section(section,8))
 
 print json.dumps(
