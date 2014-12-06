@@ -22,7 +22,7 @@ JSON Document with the following key values
 | algorithm            | Algorithm used  (MD5)                                                                                                |
 | chars_signed         | Number of characters, pst pre_regex that are encoded. -1 is the complete document.                                   |
 | delimiters           | how the document the is split into different sections                                               |
-| pre_regex            | Regex used to clean up text before creating signature. Remove spaces etc.                                            |
+| pre_regex            | Regex used to clean up text before creating signature. Remove spaces etc.  (better options then regex might be good) |
 | signatures           | Array of signatures of each subsection of a document                                                                 |
 | signature_encoding   | Type of encoding of used algorithm (I.E. HEX 64)                                                                     |
 | signature_length     | For each section signature, how many characters are used. For example MD5_128 is 32 long but we could choose to only use the first 8. |
