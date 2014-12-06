@@ -1,7 +1,7 @@
 HATC
 ====
 
-# REFACTOR add (N-Gram) by work example [http://en.wikipedia.org/wiki/N-gram]
+REFACTOR add (N-Gram)[http://en.wikipedia.org/wiki/N-gram]  by word example
 
 ## Goals for (H)ash (A)lgorithm for (T)ext (C)omparison
 Create a prototype method for specifying a reproducible hash of text content. Goals:
