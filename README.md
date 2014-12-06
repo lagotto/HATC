@@ -129,5 +129,5 @@ would be encoded as
            "signature_length": 8
        }
                     
-By looking at the hashes we see an overlap of: e81721c3, 443461bb, 9e8f7047 and 29b22339 
+By looking at the hashes we see an union of: e81721c3, 443461bb, 9e8f7047 and 29b22339 
 and could surmise the cupcake article references the bacon article.   
