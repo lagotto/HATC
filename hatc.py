@@ -12,7 +12,7 @@ signatures = []
 text_encoding = 'UTF8'
 
 m = md5.new()
-pre_reg = re.compile('[ \t\r\n]')
+pre_reg = re.compile('\s')
  
  
 def encode_section(section, max_length):
