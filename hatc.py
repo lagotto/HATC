@@ -13,9 +13,6 @@ text = args.text
 if args.file is not None:
     text = open(args.file, 'r').read()
 
-print text 
-print 
-
 algorithm = 'MD5'
 signature_encoding = 'BASE_64'
 signature_length = 8
@@ -37,12 +34,10 @@ def pre_process(text, delimiter):
     return re.sub(pre_reg,'',text).split(delimiter)        
     
 for section in pre_process(text,'.'):
-    print section
+    #print section
     sig = encode_section(section,signature_length)
-    print sig
+    #print sig
     signatures.append(sig)
-
-print signatures
 
 print json.dumps(
     {

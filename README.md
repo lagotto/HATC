@@ -42,38 +42,39 @@ The following meat article
 
 Could be encoded as
 
-    {
-        "algorithm": "MD5_128",
-        "chars_signed": -1,
-        "delimiters": ".",
-        "pre_regex": "[\s]",
-        "signature_encoding": "BASE_64",
-        "signature_length": 8,
-        "signatures": [
-            "9cb87bdb",
-            "a6d4598f",
-            "fc41fa2b",
-            "0feb2a2b",
-            "7bc54e52",
-            "faba705d",
-            "6840b0d8",
-            "89096eb4",
-            "d21e498f",
-            "fa3befc7",
-            "67b9e179",
-            "d90ef02a",
-            "8590c917",
-            "8cf11d6a",
-            "cecd1900",
-            "df07f642",
-            "7fb1fe75",
-            "7bb2eff4",
-            "21b708ba",
-            "21b708ba"
-        ],
-        "text_encoding": "UTF8"
-    }
-    
+      python hatc.py  -f bacon_ipsum.txt 
+      {
+          "delimiters": ".",
+          "signatures": [
+              "9cb87bdb",
+              "65d51238",
+              "3018f2fa",
+              "b213e94c",
+              "4e6cdf55",
+              "3df4ffd7",
+              "87de3f39",
+              "a1c5c2d8",
+              "7038fd13",
+              "65709c7c",
+              "e81721c3",
+              "443461bb",
+              "9e8f7047",
+              "29b22339",
+              "4ad7cff2",
+              "8b0e62fc",
+              "899f0b76",
+              "008a4665",
+              "1ba6c8ed",
+              "d41d8cd9"
+          ],
+          "pre_regex": "[\\s]",
+          "algorithm": "MD5",
+          "signature_encoding": "BASE_64",
+          "chars_signed": -1,
+          "text_encoding": "UTF8",
+          "signature_length": 8
+      }
+          
 Suppose a cupcake article referenced a subsection of the meat article.
 
         Carrot cake chocolate bar ice cream powder muffin apple pie pastry soufflé jelly-o. Sugar plum toffee brownie candy dragée donut fruitcake cookie lollipop. Liquorice sesame snaps icing jelly beans chocolate carrot cake. Halvah marshmallow lollipop applicake. Gummies chocolate bar marshmallow cake oat cake. Lemon drops croissant jujubes. Tart jelly beans danish applicake sweet roll liquorice. Unerdwear.com gummies marshmallow bonbon cookie bear claw brownie. Tiramisu cake lemon drops sweet. Macaroon muffin brownie gingerbread gingerbread wafer candy unerdwear.com marshmallow. Jujubes pastry icing bear claw applicake. Oat cake lemon drops lemon drops biscuit tootsie roll.
@@ -85,48 +86,48 @@ Suppose a cupcake article referenced a subsection of the meat article.
 would be encoded as
   
       
-      {
-          "algorithm": "MD5",
-          "chars_signed": -1,
-          "delimiters": ".",
-          "pre_regex": "[\\s]",
-          "signature_encoding": "BASE_64",
-          "signature_length": 8,
-          "signatures": [
-              "f79857a1",
-              "82f867e7",
-              "79d53163",
-              "e332ed2a",
-              "8ff34306",
-              "a6c1884e",
-              "7b5a94b9",
-              "23145dd5",
-              "f53bd129",
-              "c0043f88",
-              "11b37eab",
-              "f4c32e99",
-              "fd36d520",
-              "c826212b",
-              "94fe88d0",
-              "9a42af2c",
-              "6af3afc4",
-              "88b58a00",
-              "1ba18f42",
-              "6c0bf019",
-              "73a6670c",
-              "6adbac6c",
-              "26fb8feb",
-              "1d8f44bf",
-              "3c39f784",
-              "ce425fc7",
-              "a6f8fa5b",
-              "8842e658",
-              "4415b832",
-              "22971773",
-              "d84faf4c",
-              "d84faf4c"
-          ],
-          "text_encoding": "UTF8"
-      }
-      
+       {
+           "delimiters": ".",
+           "signatures": [
+               "f79857a1",
+               "c0d47091",
+               "accdd051",
+               "43787f32",
+               "e9af37c4",
+               "7608abf7",
+               "2f68d6e1",
+               "c0500edf",
+               "323d75c5",
+               "c5b0d4b1",
+               "f3ff8839",
+               "ddddae4f",
+               "10704b08",
+               "3a54c42c",
+               "e81721c3",
+               "443461bb",
+               "9e8f7047",
+               "29b22339",
+               "daa61122",
+               "cf5ea978",
+               "563036d4",
+               "241d7830",
+               "f1e16b4d",
+               "9cd7e9cd",
+               "c7710519",
+               "0730098a",
+               "40366d68",
+               "47e6f04d",
+               "d3e1d1e6",
+               "29bf4360",
+               "17d449b5",
+               "d41d8cd9"
+           ],
+           "pre_regex": "[\\s]",
+           "algorithm": "MD5",
+           "signature_encoding": "BASE_64",
+           "chars_signed": -1,
+           "text_encoding": "UTF8",
+           "signature_length": 8
+       }
+             
 By looking at the hashes we see an overlap of: ** **      
