@@ -127,4 +127,6 @@ would be encoded as
               "d84faf4c"
           ],
           "text_encoding": "UTF8"
-      }      
+      }
+      
+By looking at the hashes we see an overlap of: ** **      
