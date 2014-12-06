@@ -1,7 +1,7 @@
 HATC
 ====
 
-## Gaols for (H)ash (A)lgorithm for (T)ext (C)omparison
+## Goals for (H)ash (A)lgorithm for (T)ext (C)omparison
 Create a prototype method for specifying a reproducible hash of text content. Goals:
 
 * Allow publishing of an Hash that allows comparison of a text when the actual content 
