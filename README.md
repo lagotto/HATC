@@ -46,7 +46,7 @@ Could be encoded as
         "algorithm": "MD5_128",
         "chars_signed": -1,
         "delimiters": ".",
-        "pre_regex": "[ \t\r\n]",
+        "pre_regex": "[\s]",
         "signature_encoding": "BASE_64",
         "signature_length": 8,
         "signatures": [
